@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <style>
+
+    .tabcontaint {
+            display: none;
+        }
+        .tablinks {
+           outline: none;
+           cursor: pointer;
+    border: none;
+    width: 25%;
+    float: left;
+    padding: 16px;
+    color: white;
+    background: brown;
+}
+
+.tablinks:hover {
+    background-color: rgb(160, 65, 65);;
+}
+    #dpdwnId {
+
+      padding: 1.25rem;
+      height: 0px;
+      padding: 0;
+      background: aqua;
+      overflow: hidden;
+      transition: 0.7s;
+    }
+    
+    #btnId2 {
+      position: absolute;
+    }
+
+    .hover-overla:hover {
+
+      color: #dbd8d56e;
+      transition: 0.7s;
+    }
+
+
+
+
+    .wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+details {
+  width: 100%;
+  max-width: 500px;
+}
+
+summary {
+  background: #f2f2f2;
+  cursor: pointer;
+  padding: 15px;
+}
+
+p {
+  padding: 15px;
+  margin: 0;
+  background: #f2f2f2;
+}
+  </style>
+
+
+
+  <!-- Bootstrap CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark"
+    style="background-color: #0b65a5;position: fixed;width: 100%;top: 0px;">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+  <div style="width: 100%;" class="">
+    <div style="width: 100%;height:17px; background:rgb(61, 60, 60);position: fixed;top: 55px;" class="">
+      <div id="scroll" style="height:17px; background:rgb(7, 3, 7);width: 100%;" class=""></div>
+    </div>
+  </div>
+
+
+  <div style="" class="slide">
+    <img src="img/imag5.jpg" style="height: 500px;width: 100%;transition: 2s;width: 100%;
+" class="mySLides img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,}" alt="">
+    <img src="img/img4.jpg" style="height: 500px;width: 100%;transition: 2s;width: 100%;
+" class="mySLides img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,}" alt="">
+    <img src="img/imag6.jpg" style="height: 500px;width: 100%;transition: 2s;width: 100%;
+" class="mySLides img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,}" alt="">
+
+
+
+    <a onclick="mySLidees(-1)" href="#">
+      <i class="fa fa-chevron-left" style="font-size:36px; position: absolute;
+top: 281px;
+left: 54px;"></i>
+    </a>
+
+    <a onclick="mySLidees(1)" style="" href="#">
+      <i class="fa fa-chevron-right" style="font-size:36px; position: absolute;
+top: 281px;
+right: 54px;"></i>
+    </a>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+
+
+
+  <div style="" class="container">
+    <button onclick="mydpdwn(0)" class="btn-dark btn-block">Click Here</button>
+    <div id="dpdwn1" class="dpdwn"
+      style="background-color: rgb(224, 222, 220);overflow: hidden;transition: 1s;height: 156px;" class="item">
+      <p class="" style="text-align: justify;padding: 19px 27px 0px 27px;margin: 0;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio possimus dignissimos quas esse,
+        reprehenderit voluptates, saepe, velit natus impedit consequuntur voluptatibus? Debitis pariatur, sunt maxime
+        illo eum sit. Qui voluptate pariatur deleniti in sunt amet illum nesciunt non repellat vel cupiditate, ex soluta
+        quasi ad beatae ut ab quod officiis ipsum. Unde sed optio aperiam illo numquam quia amet necessitatibus cumque
+        est nam? At ipsa neque explicabo, ex nihil amet laboriosam repudiandae, quas maiores obcaecati labore sint quasi
+        placeat odio, asperiores ab aliquid minus recusandae unde et consequatur exercitationem alias. Fuga placeat,
+        incidunt laborum voluptatibus quia sint officia autem.
+      </p>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <button onclick="mydpdwn(1)" class="btn-dark btn-block">Click Here</button>
+    <div class="dpdwn" style="background-color: rgb(224, 222, 220);overflow: hidden;transition: 1s;height: 0px;"
+      class="item">
+      <p class="" style="text-align: justify;padding: 19px 27px 0px 27px;margin: 0;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio possimus dignissimos quas esse,
+        reprehenderit voluptates, saepe, velit natus impedit consequuntur voluptatibus? Debitis pariatur, sunt maxime
+        illo eum sit. Qui voluptate pariatur deleniti in sunt amet illum nesciunt non repellat vel cupiditate, ex soluta
+        quasi ad beatae ut ab quod officiis ipsum. Unde sed optio aperiam illo numquam quia amet necessitatibus cumque
+        est nam? At ipsa neque explicabo, ex nihil amet laboriosam repudiandae, quas maiores obcaecati labore sint quasi
+        placeat odio, asperiores ab aliquid minus recusandae unde et consequatur exercitationem alias. Fuga placeat,
+        incidunt laborum voluptatibus quia sint officia autem.
+      </p>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <button onclick="mydpdwn(2)" class="btn-dark btn-block">Click Here</button>
+    <div id="dpdwn3" class="dpdwn"
+      style="background-color: rgb(224, 222, 220);overflow: hidden;transition: 1s;height: 0px;" class="item">
+      <p class="" style="text-align: justify;padding: 19px 27px 0px 27px;margin: 0;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio possimus dignissimos quas esse,
+        reprehenderit voluptates, saepe, velit natus impedit consequuntur voluptatibus? Debitis pariatur, sunt maxime
+        illo eum sit. Qui voluptate pariatur deleniti in sunt amet illum nesciunt non repellat vel cupiditate, ex soluta
+        quasi ad beatae ut ab quod officiis ipsum. Unde sed optio aperiam illo numquam quia amet necessitatibus cumque
+        est nam? At ipsa neque explicabo, ex nihil amet laboriosam repudiandae, quas maiores obcaecati labore sint quasi
+        placeat odio, asperiores ab aliquid minus recusandae unde et consequatur exercitationem alias. Fuga placeat,
+        incidunt laborum voluptatibus quia sint officia autem.
+      </p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <button onclick="mydpdwn(3)" class="btn-dark btn-block">Click Here</button>
+    <div class="dpdwn" style="background-color: rgb(224, 222, 220);overflow: hidden;transition: 1s;height: 0px;"
+      class="item">
+      <p class="" style="text-align: justify;padding: 19px 27px 0px 27px;margin: 0;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio possimus dignissimos quas esse,
+        reprehenderit voluptates, saepe, velit natus impedit consequuntur voluptatibus? Debitis pariatur, sunt maxime
+        illo eum sit. Qui voluptate pariatur deleniti in sunt amet illum nesciunt non repellat vel cupiditate, ex soluta
+        quasi ad beatae ut ab quod officiis ipsum. Unde sed optio aperiam illo numquam quia amet necessitatibus cumque
+        est nam? At ipsa neque explicabo, ex nihil amet laboriosam repudiandae, quas maiores obcaecati labore sint quasi
+        placeat odio, asperiores ab aliquid minus recusandae unde et consequatur exercitationem alias. Fuga placeat,
+        incidunt laborum voluptatibus quia sint officia autem.
+      </p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <button onclick="mydpdwn(4)" class="btn-dark btn-block">Click Here</button>
+    <div class="dpdwn" style="background-color: rgb(224, 222, 220);overflow: hidden;transition: 1s;height: 0px;"
+      class="item">
+      <p class="" style="text-align: justify;padding: 19px 27px 0px 27px;margin: 0;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio possimus dignissimos quas esse,
+        reprehenderit voluptates, saepe, velit natus impedit consequuntur voluptatibus? Debitis pariatur, sunt maxime
+        illo eum sit. Qui voluptate pariatur deleniti in sunt amet illum nesciunt non repellat vel cupiditate, ex soluta
+        quasi ad beatae ut ab quod officiis ipsum. Unde sed optio aperiam illo numquam quia amet necessitatibus cumque
+        est nam? At ipsa neque explicabo, ex nihil amet laboriosam repudiandae, quas maiores obcaecati labore sint quasi
+        placeat odio, asperiores ab aliquid minus recusandae unde et consequatur exercitationem alias. Fuga placeat,
+        incidunt laborum voluptatibus quia sint officia autem.
+      </p>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  <h2 class="lead text-center">
+    My Item Read more area.
+  </h2>
+  <hr>
+
+  <div class="container">
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corrupti id? Quo
+      impedit quasi dolor molestias culpa, quaerat nostrum. Ducimus tenetur temporibus accusamus atque neque quas nemo.
+      Sint, at placeat voluptatum harum <span id="dots">.........</span><span style="display: none;" id="more"> sunt
+        doloribus eaque dolor veniam soluta laboriosam libero officiis nesciunt iusto. Ad aliquid expedita nisi nostrum
+        maiores! At magnam porro corrupti vero maxime enim neque reiciendis natus quae voluptatibus repellat unde culpa
+        dolorum facilis quam provident, eum nisi quo cumque error possimus incidunt qui aut? Impedit eos error
+        aspernatur perspiciatis doloremque, natus iusto. Voluptate perferendis beatae ullam eum mollitia itaque repellat
+        magnam unde, nihil illum, maxime enim neque reiciendis natus quae voluptatibus repellat unde culpa dolorum
+        facilis quam provident, eum nisi quo cumque error possimus incidunt qui aut? Impedit eos error aspernatur
+        perspiciatis doloremque, natus iusto. Voluptate perferendis beatae ullam eum mollitia itaque repellat magnam
+        unde, nihil illum, non ipsa nemo!</span></p>
+    <button id="myBtn" onclick="myReadMore()" class="btn-dark">Read More</button>
+  </div>
+
+  
+  <br>
+  <br>
+
+  <div class="container">
+
+          <p style="text-align: center;font-size: 30px;padding: 10px 20px;" class="lead">MY ACCORDION</p>
+          <hr>
+          <br>
+          <br>
+          <button id="defaultOpen" onclick="myOpencity('london','blue',this)" class="tablinks">LONDON</button>
+          <button onclick="myOpencity('paris','green',this)" class="tablinks">PARIS</button>
+          <button onclick="myOpencity('wasington','red',this)" class="tablinks">WASINGTON</button>
+          <button onclick="myOpencity('hongkong','black',this)" class="tablinks">HONG KONG</button>
+          <div id="london" style="background-color: blue;padding: 10px 20px;color: white;" class="tabcontaint">
+              <h3 style="text-align: center;" class="lead">LONDON</h3>
+              <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, tempore. Excepturi esse, a voluptatum fuga sunt quisquam iusto corrupti? Magni tempora voluptatum accusantium vitae repudiandae quis natus omnis molestias nesciunt eveniet expedita quaerat maiores libero sit molestiae ut nostrum doloremque, aperiam aliquam voluptate vero similique aspernatur. Voluptas consectetur nihil ipsam, qui, minima natus quam tenetur minus repudiandae harum in! Eveniet reiciendis voluptates similique repellat enim asperiores soluta nostrum impedit aliquam optio perspiciatis beatae delectus nihil earum, voluptatibus ipsam maxime, quas architecto quaerat! Commodi ullam excepturi corrupti nemo harum expedita voluptates dicta! Excepturi voluptates autem culpa temporibus, voluptate quam delectus odit.</p>
+          </div>
+
+          <div id="paris" style="background-color: green;padding: 10px 20px;color: white;" class="tabcontaint">
+              <h3 style="text-align: center;" class="lead">PARIS</h3>
+              <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, tempore. Excepturi esse, a voluptatum fuga sunt quisquam iusto corrupti? Magni tempora voluptatum accusantium vitae repudiandae quis natus omnis molestias nesciunt eveniet expedita quaerat maiores libero sit molestiae ut nostrum doloremque, aperiam aliquam voluptate vero similique aspernatur. Voluptas consectetur nihil ipsam, qui, minima natus quam tenetur minus repudiandae harum in! Eveniet reiciendis voluptates similique repellat enim asperiores soluta nostrum impedit aliquam optio perspiciatis beatae delectus nihil earum, voluptatibus ipsam maxime, quas architecto quaerat! Commodi ullam excepturi corrupti nemo harum expedita voluptates dicta! Excepturi voluptates autem culpa temporibus, voluptate quam delectus odit.</p>
+          </div>
+
+          <div id="wasington" style="background-color: red;padding: 10px 20px;color: white;" class="tabcontaint">
+              <h3 style="text-align: center;" class="lead">WASINGTON</h3>
+              <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, tempore. Excepturi esse, a voluptatum fuga sunt quisquam iusto corrupti? Magni tempora voluptatum accusantium vitae repudiandae quis natus omnis molestias nesciunt eveniet expedita quaerat maiores libero sit molestiae ut nostrum doloremque, aperiam aliquam voluptate vero similique aspernatur. Voluptas consectetur nihil ipsam, qui, minima natus quam tenetur minus repudiandae harum in! Eveniet reiciendis voluptates similique repellat enim asperiores soluta nostrum impedit aliquam optio perspiciatis beatae delectus nihil earum, voluptatibus ipsam maxime, quas architecto quaerat! Commodi ullam excepturi corrupti nemo harum expedita voluptates dicta! Excepturi voluptates autem culpa temporibus, voluptate quam delectus odit.</p>
+          </div>
+
+          <div id="hongkong" style="background-color: black;padding: 10px 20px;color: white;" class="tabcontaint">
+              <h3 style="text-align: center;" class="lead">HONG KONG</h3>
+              <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, tempore. Excepturi esse, a voluptatum fuga sunt quisquam iusto corrupti? Magni tempora voluptatum accusantium vitae repudiandae quis natus omnis molestias nesciunt eveniet expedita quaerat maiores libero sit molestiae ut nostrum doloremque, aperiam aliquam voluptate vero similique aspernatur. Voluptas consectetur nihil ipsam, qui, minima natus quam tenetur minus repudiandae harum in! Eveniet reiciendis voluptates similique repellat enim asperiores soluta nostrum impedit aliquam optio perspiciatis beatae delectus nihil earum, voluptatibus ipsam maxime, quas architecto quaerat! Commodi ullam excepturi corrupti nemo harum expedita voluptates dicta! Excepturi voluptates autem culpa temporibus, voluptate quam delectus odit.</p>
+          </div>
+          
+      </div>
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  
+
+<div class="wrapper">
+  <details>
+    <summary>
+      Click me to see more details
+    </summary>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum perferendis eius. Adipisci velit et similique earum quas illo odio rerum optio, quis, expedita assumenda enim dicta aliquam porro maxime minima sed a ullam, aspernatur corporis.
+    </p>
+  </details>
+</div>
+
+
+
+  <a href="">dskfjds</a>
+
+
+  <i class="fas fa-dot-circle"></i>
+
+  <script>
+
+    function myOpencity(city,color,elemnt){
+            var tabcontent = document.getElementsByClassName("tabcontaint");
+            var i;
+            for(i = 0;i < tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for(i = 0;i < tablinks.length; i++){
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(city).style.display = "block";
+            elemnt.style.backgroundColor = color;
+          }
+          document.getElementById("defaultOpen").click();
+
+
+
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function mySLidees(n) {
+      showSlides(slideIndex += n);
+    }
+
+
+    function showSlides(n) {
+      var slide = document.getElementsByClassName("mySLides");
+      var i;
+      if (n > slide.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slide.length;
+      }
+      for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+      }
+      slide[slideIndex - 1].style.display = "block";
+    }
+
+
+
+
+
+
+
+    function mydpdwn(n) {
+      var dpdwn = document.getElementsByClassName("dpdwn");
+      var i;
+
+      for (i = 0; i < dpdwn.length; i++) {
+        dpdwn[i].style.height = "0px";
+      }
+      if (dpdwn[n].style.height == "0px") {
+        dpdwn[n].style.height = "156px";
+      } else {
+        dpdwn[n].style.height = "0px";
+
+      }
+      slides[n].style.height = "0px";
+    }
+
+
+
+    window.onscroll = function () {
+      myScroll()
+    };
+
+    function myScroll() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scroled = (winScroll / scrollHeight) * 100;
+      document.getElementById("scroll").style.width = scroled + "%";
+    }
+
+
+    function myReadMore() {
+      dots = document.getElementById("dots");
+      more = document.getElementById("more");
+      myBtn = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "";
+        myBtn.innerHTML = "Read more";
+        more.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        myBtn.innerHTML = "Read less";
+        more.style.display = "inline";
+      }
+    }
+    
+
+
+    
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
